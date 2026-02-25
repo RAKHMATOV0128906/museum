@@ -1,0 +1,332 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@theme static {
+  --font-sans: 'Public Sans', sans-serif;
+
+  --color-green-50: #EFFDF5;
+  --color-green-100: #D9FBE8;
+  --color-green-200: #B3F5D1;
+  --color-green-300: #75EDAE;
+  --color-green-400: #00DC82;
+  --color-green-500: #00C16A;
+  --color-green-600: #00A155;
+  --color-green-700: #007F45;
+  --color-green-800: #016538;
+  --color-green-900: #0A5331;
+  --color-green-950: #052E16;
+}
+@font-face {
+  font-family: Semibold;
+  src: url(../Fonts/Manrope/static/Monrope-Semibold.otf);
+}
+@font-face {
+  font-family:  Medium;
+  src: url(../Fonts/Manrope/static/Monrope-Medium.otf);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+.header {
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 52px;
+  /*background: black;*/
+  font-size: 14px;
+}
+.left{
+  display: flex;
+  justify-content: space-between;
+}
+.top-bar .left span {
+  margin-top: 15px;
+  margin-right: 20px;
+}
+.top-bar .right {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+
+.top-bar .right .lang {
+  margin-left: 10px;
+  border: none;
+  padding: 10px;
+  background: transparent;
+  cursor: pointer;
+}
+.right .eve{
+  display: flex;
+  margin-right: 30px;
+}
+.right .buttonn{
+  gap: 10px;
+}
+.buttonn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 5px 10px;
+  background-color: #F9FAFB;
+  border-radius: 15px;
+}
+.navbar {
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+.vekto{
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.navbar-brand{
+  display: flex;
+  justify-content: start;
+  text-decoration: none;
+}
+.logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.res{
+  color: black;
+}
+
+.logo img {
+  display: flex;
+  justify-content: start;
+  margin-right: 15px;
+  width: 50px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.actions {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.actions button {
+  margin-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+.res p{
+  margin-bottom: 0;
+}
+
+/*-----------------------CardImg-------------*/
+.card{
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  color: #fff;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.card-header{
+  background-color: white;
+}
+.IchanQala{
+  font-family: "Semibold";
+  font-size: 20px;
+  color: black;
+  margin-bottom: 10px;
+}
+.T{
+  font-family: "Semibold";
+  color: black;
+  margin-top: 10px;
+}
+.icons{
+  /*position: absolute;*/
+  padding-top: 5px;
+  display: flex;
+  text-decoration: none;
+}
+.icon p {
+  text-decoration: none;
+  color: black;
+}
+img{
+  margin-top: 5px;
+  width: 100%;
+}
+.prise{
+  text-decoration: none;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  height: 30px;
+  background-color: cadetblue;
+  margin-top: 10px;
+}
+.prise:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+.prise .router1{
+  text-decoration: none;
+  color: #11927F;
+  margin-left: 5px;
+}
+.narx{
+  text-decoration: none;
+  color: #052E16;
+}
+/*-------------------------section4---------------------*/
+.section4{
+  margin-top: 50px;
+}
+.section4 .news{
+  font-family: "Segoe UI Bold";
+  font-size: 20px;
+}
+.section4 .news1{
+  margin-top: 10px;
+}
+
+.news-layout {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 24px;
+}
+.big-card {
+  position: relative;
+  height: 480px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay-card {
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
+  background: #fff;
+  padding: 24px 28px;
+  border-radius: 28px;
+  width: 380px;
+  height: 420px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.overlay-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay-card h2 {
+  margin: 14px 0;
+  font-size: 22px;
+  line-height: 1.35;
+}
+
+.author {
+  position: absolute;
+  padding-top: 55%;
+  font-size: 13px;
+  color: #777;
+}
+.right-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.mini-card {
+  display: flex;
+  gap: 14px;
+  padding: 14px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.mini-card img {
+  width: 100px;
+  height: 120px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.mini-content h4 {
+  font-size: 14px;
+  line-height: 1.35;
+  margin-top: 6px;
+}
+
+.mini-date {
+  font-size: 12px;
+  color: #777;
+}
+.tags,
+.mini-tags {
+  display: flex;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: #fff;
+}
+
+.green {
+  background: #2bb673;
+}
+
+.pink {
+  background: #ff5b7f;
+}
+@media (max-width: 992px) {
+  .news-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .overlay-card {
+    width: calc(100% - 40px);
+    left: 20px;
+    bottom: 20px;
+  }
+}
